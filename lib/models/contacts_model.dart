@@ -6,8 +6,8 @@ class ContactsModel{
   String? name;
   String? contact;
   String? image;
-
-  ContactsModel({ this.name,this.contact,required this.image});
+  int? id;
+  ContactsModel({ this.name,this.contact,required this.image,required this.id});
 
   factory ContactsModel.fromJson(Map<String,dynamic> json)=>_$ContactsModelFromJson(json);
 
